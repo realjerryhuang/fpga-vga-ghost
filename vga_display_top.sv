@@ -13,7 +13,7 @@ module vga_display_top(
 	logic my_clk;
 	clock_divider my_clk_divider(clk, rst, my_clk);
 	
-	// Reset synchronization (4-bit shift register for rst)
+	// Reset synchronization (2-bit shift register for rst)
 	logic [1:0] rst_shift = 2'b00;
 	//	FF0						FF1
 	//	rst_shift[1]			rst_shift[0]
